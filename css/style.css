@@ -1,0 +1,100 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.descripcion,
+label {
+    text-align: center;
+    font-family: "Roboto", serif;
+}
+
+.container {
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    colo
+}
+
+.text-box1 {
+    width: 50%;
+    float: left;
+    display: grid;
+    place-items: center;
+}
+
+.text-box2 {
+    width: 50%;
+    float: right;
+    display: grid;
+    place-items: center;
+}
+
+#input-text,
+#encrypted-text {
+    padding: 10px;
+    background: #d80027;
+    width: 80%;
+    border-color: black;
+    border-radius: 25px;
+    color: #fff;
+}
+
+#boton-encriptar,
+#boton-desencriptar,
+#boton-copiar {
+    position: flex;
+    width: 181px;
+    height: 37px;
+    background: #d80027;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* CSS para movil */
+
+@media screen and (max-width: 480px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    #boton-desencriptar, #boton-copiar{
+        margin-bottom: 1em;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    #boton-desencriptar, #boton-copiar{
+        margin-bottom: 1em;
+    }
+}
